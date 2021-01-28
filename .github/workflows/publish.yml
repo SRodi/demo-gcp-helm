@@ -1,0 +1,16 @@
+name: publish-chart
+on: [push]
+jobs:
+  publish-chart:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Publish Helm chart
+        uses: ./
+        with:
+          owner: srodi
+          repository: demo-gcp-helm
+          branch: gh-pages
+          target_dir: archive
+          commit_username: srodi
+          commit_email: simone.rodigari@gmail.com
