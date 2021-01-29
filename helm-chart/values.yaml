@@ -7,5 +7,5 @@ replicaCount: 1
 image:
   repository: luksa/kubia
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v2"
+  tag: "v1"
 
