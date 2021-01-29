@@ -3,11 +3,11 @@ entries:
   helm-chart:
   - apiVersion: v1
     appVersion: 1.16.0
-    created: "2021-01-28T17:28:05.827520026Z"
+    created: "2021-01-29T09:06:59.313147968Z"
     description: A Helm chart for Kubernetes
-    digest: 88136fe5b46347f81c70ec9b79f41407dad4e95de6cde9948b7cd9ac9a22e936
+    digest: 1d1956e8c85b2489eae280c340672224fc53b90574a013ad56020537df4a8618
     name: helm-chart
     urls:
     - https://srodi.github.io/demo-gcp-helm/helm-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2021-01-28T17:28:05.827149522Z"
+generated: "2021-01-29T09:06:59.312425962Z"
