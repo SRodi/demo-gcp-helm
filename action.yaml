@@ -25,6 +25,15 @@ inputs:
     description: "The email used for the commit user"
     required: false
     default: ${{ github.actor }}@users.noreply.github.com
+  app_version:
+    description: "Set the appVersion on the chart to this version"
+    required: false
+  chart_version:
+    description: "Set the version on the chart to this version"
+    required: false
+  token:
+    description: "GitHub token"
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -35,3 +44,6 @@ runs:
     - ${{ inputs.target_dir }}
     - ${{ inputs.commit_username }}
     - ${{ inputs.commit_email }}
+    - ${{ inputs.app_version }}
+    - ${{ inputs.chart_version }}
+    - ${{ inputs.token }}

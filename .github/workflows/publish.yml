@@ -11,6 +11,9 @@ jobs:
           owner: srodi
           repository: demo-gcp-helm
           branch: gh-pages
-          target_dir: archive
-          commit_username: srodi
+          target_dir: ""
+          commit_username: SRodi
           commit_email: simone.rodigari@gmail.com
+          app_version: 1.16.0
+          chart_version: 0.1.0
+          token: ${{ secrets.BOT_GITHUB_TOKEN }}
